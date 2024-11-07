@@ -20,7 +20,9 @@ public sealed class AlertLevelSystem : EntitySystem
     [Dependency] private readonly AnnouncerSystem _announcer = default!;
 
     // Until stations are a prototype, this is how it's going to have to be.
-    public const string DefaultAlertLevelSet = "stationAlerts";
+    //public const string DefaultAlertLevelSet = "stationAlerts";
+    // only way i could do this sadly :(
+    public const string DefaultAlertLevelSet = "scpAlerts";
 
     public override void Initialize()
     {

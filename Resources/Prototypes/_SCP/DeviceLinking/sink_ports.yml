@@ -1,0 +1,4 @@
+- type: sinkPort
+  id: SCPAnalyzerReceiver
+  name: signal-port-name-artifact-analyzer-receiver
+  description: signal-port-description-artifact-analyzer-receiver

@@ -1,0 +1,43 @@
+- type: entity
+  parent: BaseComputer
+  id: SCPComputerAnalysisConsole
+  name: SCP analysis console
+  description: A computer used to interface with the SCP analyzer.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: artifact
+    - map: ["computerLayerKeys"]
+      state: tech_key
+  - type: ResearchClient
+  - type: DeviceList
+  - type: DeviceNetwork
+    deviceNetId: Wired
+  - type: DeviceLinkSource
+    range: 5
+    ports:
+    - SCPAnalyzerSender
+  - type: ActivatableUI
+    key: enum.ArtifactAnalzyerUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.ArtifactAnalzyerUiKey.Key
+      type: AnalysisConsoleBoundUserInterface
+    - key: enum.ResearchClientUiKey.Key
+      type: ResearchClientBoundUserInterface
+  - type: ApcPowerReceiver
+    powerLoad: 1000
+  - type: Computer
+    board: AnalysisComputerCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b53ca1"
+  - type: GuideHelp
+    guides:
+    - Xenoarchaeology

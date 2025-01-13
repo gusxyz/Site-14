@@ -6,6 +6,8 @@
   components:
   - type: Psionic
     removable: false
+    assayFeedback:
+      - prober-feedback
   - type: InnatePsionicPowers
     powersToAdd:
       - TelepathyPower
@@ -65,9 +67,6 @@
     damageContainer: Inorganic
     damageModifierSet: ShockAbsorber
   - type: CargoSellBlacklist
-  - type: GuideHelp
-    guides:
-    - Psionics
   - type: AmbientSound
     range: 6
     volume: -6
@@ -96,6 +95,8 @@
   components:
   - type: Psionic
     removable: false
+    assayFeedback:
+      - drain-feedback
   - type: GlimmerSource
     addToGlimmer: false
   - type: Construction
@@ -119,9 +120,6 @@
           False: {visible: false}
   - type: PowerSwitch
   - type: CargoSellBlacklist
-  - type: GuideHelp
-    guides:
-    - Psionics
   - type: NpcFactionMember
     factions:
     - PsionicInterloper # :^)

@@ -24,11 +24,15 @@
   tier: 1
   cost: 10000
   recipeUnlocks:
-  - ShellShotgunIncendiary
-  - CartridgePistolIncendiary
-  - CartridgeMagnumIncendiary
-  - CartridgeLightRifleIncendiary
-  - CartridgeRifleIncendiary
+  - BoxShotgunIncendiary
+  - MagazineRifleIncendiary
+  - MagazinePistolIncendiary
+  - MagazinePistolSubMachineGunIncendiary
+  - MagazineMagnumIncendiary
+  - MagazineLightRifleIncendiary
+  - SpeedLoaderMagnumIncendiary
+  - SpeedLoaderRifleHeavyIncendiary # Frontier
+  - MagazineShotgunIncendiary
   - MagazineBoxPistolIncendiary
   - MagazineBoxMagnumIncendiary
   - MagazineBoxLightRifleIncendiary
@@ -60,19 +64,30 @@
   tier: 1
   cost: 5000
   recipeUnlocks:
-  - ShellShotgunBeanbag
+  - MagazineShotgunBeanbag
+  - ShellTranquilizer
+  - BoxBeanbag
   - CartridgePistolRubber
   - CartridgeMagnumRubber
   - CartridgeLightRifleRubber
   - CartridgeRifleRubber
+  - MagazineRifleRubber
+  - MagazinePistolRubber
+  - MagazinePistolSubMachineGunRubber
+  - MagazineMagnumRubber
+  - MagazineLightRifleRubber
+  - SpeedLoaderMagnumRubber
   - MagazineBoxPistolRubber
   - MagazineBoxMagnumRubber
   - MagazineBoxLightRifleRubber
   - MagazineBoxRifleRubber
-  # DeltaV - .38 special rubber ammo - Adds .38 special rubber ammo to the research tree
   - CartridgeSpecialRubber
   - MagazineBoxSpecialRubber
-  # End of modified code
+  - WeaponDisabler
+  - MagazineBoxLightRifleRubber # Frontier
+  - MagazineBoxMagnumRubber # Frontier
+  - MagazineBoxPistolRubber # Frontier
+  - MagazineBoxRifleRubber # Frontier
 
 - type: technology
   id: UraniumMunitions
@@ -84,19 +99,20 @@
   tier: 1
   cost: 7500
   recipeUnlocks:
-  - ShellShotgunUranium
-  - CartridgePistolUranium
-  - CartridgeMagnumUranium
-  - CartridgeLightRifleUranium
-  - CartridgeRifleUranium
+  - MagazineRifleUranium
+  - MagazinePistolUranium
+  - MagazinePistolSubMachineGunUranium
+  - MagazineMagnumUranium
+  - MagazineLightRifleUranium
+  - SpeedLoaderMagnumUranium
+  - SpeedLoaderRifleHeavyUranium # Frontier
   - MagazineBoxPistolUranium
   - MagazineBoxMagnumUranium
   - MagazineBoxLightRifleUranium
   - MagazineBoxRifleUranium
-  # DeltaV - .38 special uranium ammo - Adds .38 special uranium ammo to the research tree
+  - BoxShotgunUranium
   - CartridgeSpecialUranium
   - MagazineBoxSpecialUranium
-  # End of modified code
 
 - type: technology
   id: AdvancedRiotControl
@@ -113,6 +129,7 @@
   - TelescopicShield
   - HoloprojectorSecurity
   - WeaponDisablerSMG
+  - BolaEnergy
 
 # Tier 2
 
@@ -173,6 +190,7 @@
   - PowerCageMedium
   - MagazineGrenadeEmpty
   - GrenadeFlash
+  - GrenadeBlast
   - ShuttleGunSvalinnMachineGunCircuitboard
   - ShuttleGunPerforatorCircuitboard
   - ShuttleGunFriendshipCircuitboard
@@ -192,6 +210,7 @@
   cost: 15000
   recipeUnlocks:
   - WeaponAdvancedLaser
+  - PortableRecharger
 
 - type: technology
   id: ExperimentalBatteryAmmo

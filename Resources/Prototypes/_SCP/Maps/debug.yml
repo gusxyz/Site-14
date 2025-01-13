@@ -7,12 +7,16 @@
     Dev:
       stationProto: StandardNanotrasenStation
       components:
-        - type: StationNameSetup
-          mapNameTemplate: "SCP Dev"
-        - type: StationJobs
-          overflowJobs:
-          - SCPSiteDirector
-          availableJobs:
-            SCPSiteDirector: [ -1, -1 ]
-            SCPSecurityGuard: [-1, -1]
-            SCPClassD: [-1, -1]
+      - type: StationNameSetup
+        mapNameTemplate: "SCP Dev"
+      - type: StationJobs
+        overflowJobs:
+        - SCPSiteDirector
+        availableJobs:
+          SCPSiteDirector: [ -1, -1 ]
+          SCPSecurityGuard: [-1, -1]
+          SCPClassD: [-1, -1]
+      - type: Agenda
+        availableObjectives:
+        - TestObjectiveA
+        - TestObjectiveB

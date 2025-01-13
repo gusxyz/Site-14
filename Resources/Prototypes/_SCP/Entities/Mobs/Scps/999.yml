@@ -54,3 +54,15 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 0.75
     baseSprintSpeed: 1
+
+- type: entity
+  parent: SCP-999
+  id: SCP-999-DEBUG
+  name: SCP-999-DEBUG
+  description: Appears to be a large, amorphous, gelatinous mass of translucent orange slime.
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      250: Dead
+  - type: AgendaTracker

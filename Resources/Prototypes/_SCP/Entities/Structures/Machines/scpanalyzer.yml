@@ -7,7 +7,6 @@
   - type: Sprite
     noRot: true
     sprite: Structures/Machines/artifact_analyzer.rsi
-    drawdepth: FloorObjects
     layers:
     - state: icon
     - state: unshaded
@@ -56,3 +55,12 @@
     radius: 1.5
     energy: 1.6
     color: "#b53ca1"
+  - type: ScpAnalyzer
+  - type: ActivatableUI
+    key: enum.ArtifactAnalzyerUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ArtifactAnalzyerUiKey.Key:
+        type: ScpAnalysisConsoleBoundUserInterface
+      enum.ResearchClientUiKey.Key:
+        type: ResearchClientBoundUserInterface

@@ -22,14 +22,6 @@
     range: 5
     ports:
     - SCPAnalyzerSender
-  - type: ActivatableUI
-    key: enum.ArtifactAnalzyerUiKey.Key
-  - type: UserInterface
-    interfaces:
-    - key: enum.ArtifactAnalzyerUiKey.Key
-      type: AnalysisConsoleBoundUserInterface
-    - key: enum.ResearchClientUiKey.Key
-      type: ResearchClientBoundUserInterface
   - type: ApcPowerReceiver
     powerLoad: 1000
   - type: Computer
@@ -38,6 +30,3 @@
     radius: 1.5
     energy: 1.6
     color: "#b53ca1"
-  - type: GuideHelp
-    guides:
-    - Xenoarchaeology

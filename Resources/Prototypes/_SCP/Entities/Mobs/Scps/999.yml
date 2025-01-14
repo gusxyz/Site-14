@@ -43,6 +43,7 @@
     - FootstepSound
     - DoorBumpOpener
     - CannotSuicide
+    - SCP
   - type: HTN
     rootTask:
       task: RuminantCompound

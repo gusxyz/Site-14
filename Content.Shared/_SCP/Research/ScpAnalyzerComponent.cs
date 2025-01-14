@@ -7,5 +7,7 @@ namespace Content.Shared._SCP.Research;
 public sealed partial class ScpAnalyzerComponent : Component
 {
     public bool Active { get; set; } = false;
+
+    [DataField]
     public List<EntityUid> ScpInArea = new();
 }
